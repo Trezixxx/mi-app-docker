@@ -2,87 +2,147 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Despliegue en la Nube</title>
+  <title>ElectroShop - Componentes Electrónicos</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
       color: white;
-      text-align: center;
     }
 
     header {
-      padding: 40px 20px;
-      background: rgba(0,0,0,0.3);
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #22c55e;
     }
 
     h1 {
       margin: 0;
-      font-size: 2.5rem;
+      color: #22c55e;
     }
 
     .container {
-      padding: 50px 20px;
+      padding: 30px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: rgba(255,255,255,0.1);
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .precio {
+      color: #22c55e;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: none;
+      background: #22c55e;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .doc {
+      margin-top: 40px;
+      background: #020617;
       padding: 20px;
-      margin: 20px auto;
-      border-radius: 12px;
-      max-width: 500px;
-      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      max-width: 400px;
     }
 
     footer {
+      text-align: center;
       margin-top: 40px;
       padding: 20px;
       font-size: 14px;
       opacity: 0.7;
     }
 
-    .badge {
-      background: #22c55e;
-      padding: 8px 12px;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🚀 Despliegue en la Nube</h1>
-    <p>Proyecto con Docker y Servidor Remoto</p>
-  </header>
+<header>
+  <h1>🔌 ElectroShop</h1>
+  <p>Venta de Componentes Electrónicos</p>
+</header>
 
-  <div class="container">
+<div class="container">
+
+  <h2>🛒 Productos</h2>
+
+  <div class="productos">
 
     <div class="card">
-      <h2>📦 Tecnologías usadas</h2>
-      <p>Docker • Docker Compose • Git • Servidor en la nube</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg">
+      <h3>Arduino Uno</h3>
+      <p>Microcontrolador para proyectos</p>
+      <div class="precio">$25.000 COP</div>
+      <button class="btn">Comprar</button>
     </div>
 
     <div class="card">
-      <h2>🌐 Estado del servidor</h2>
-      <p>Aplicación desplegada correctamente</p>
-      <div class="badge">ONLINE ✅</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Raspberry_Pi_4_Model_B.jpg">
+      <h3>Raspberry Pi 4</h3>
+      <p>Mini computador potente</p>
+      <div class="precio">$180.000 COP</div>
+      <button class="btn">Comprar</button>
     </div>
 
     <div class="card">
-      <h2>👨‍💻 Autor</h2>
-      <p>Tu Nombre Aquí</p>
-      <p>Ingeniería de Sistemas</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Resistors.jpg">
+      <h3>Kit de Resistencias</h3>
+      <p>Pack completo para circuitos</p>
+      <div class="precio">$10.000 COP</div>
+      <button class="btn">Comprar</button>
     </div>
 
   </div>
 
-  <footer>
-    <p>Proyecto académico - 2026</p>
-  </footer>
+  <!-- SECCIÓN DOCUMENTACIÓN -->
+  <div class="doc">
+    <h3>📄 Documentación</h3>
+    <p><strong>Autor:</strong> Santiago Caro</p>
+
+    <p>Sube tu PDF aquí:</p>
+    <input type="file" accept="application/pdf">
+
+    <p style="font-size: 12px; opacity: 0.6;">
+      (Solo demostración visual)
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>Proyecto académico - Despliegue en la nube 🚀</p>
+</footer>
 
 </body>
 </html>

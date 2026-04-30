@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi App en la Nube</title>
+  <meta charset="UTF-8">
+  <title>Despliegue en la Nube</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 50px 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 500px;
+      backdrop-filter: blur(10px);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .badge {
+      background: #22c55e;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>🚀 Despliegue exitoso</h1>
-  <p>Estoy corriendo en un servidor con Docker</p>
+
+  <header>
+    <h1>🚀 Despliegue en la Nube</h1>
+    <p>Proyecto con Docker y Servidor Remoto</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>📦 Tecnologías usadas</h2>
+      <p>Docker • Docker Compose • Git • Servidor en la nube</p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Estado del servidor</h2>
+      <p>Aplicación desplegada correctamente</p>
+      <div class="badge">ONLINE ✅</div>
+    </div>
+
+    <div class="card">
+      <h2>👨‍💻 Autor</h2>
+      <p>Tu Nombre Aquí</p>
+      <p>Ingeniería de Sistemas</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Proyecto académico - 2026</p>
+  </footer>
+
 </body>
 </html>
